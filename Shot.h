@@ -1,0 +1,28 @@
+#ifndef Shot_h
+#define Shot_h
+class Shot
+{
+	public:
+		Shot( int iX, int iY );
+		void Move();
+		void Die();
+		int GetX();
+		int GetY();
+		int GetSymbol();
+
+	protected:
+		int m_x; // горизонталька
+		int m_y; // вертикалька
+		char m_symbol; // пулька
+
+	private:
+		Shot();
+			
+		};
+class Laser
+{
+public: 
+	Shot * Shoot( int iX, int iY );
+};
+#endif
+
